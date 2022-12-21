@@ -1,0 +1,10 @@
+__pycache__
+__pycache__
+.venv
+/dist
+.coverage
+coverage.xml
+.vim
+.pytest_cache/
+*.egg-info
+*.pyc
