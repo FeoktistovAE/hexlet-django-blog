@@ -1,6 +1,8 @@
 from django.shortcuts import render
+from django.views import View
 
 # Create your views here.
-def index(request):
-    tags = 'Articles'
-    return render(request, 'article/index.html', context={'tags': tags})
+class IndexView(View):
+    def get(self, request):
+        tags = 'Articles page'
+        return render(request, 'article/index.html', context={'tags': tags})
