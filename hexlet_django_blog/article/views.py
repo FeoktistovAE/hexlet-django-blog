@@ -4,6 +4,6 @@ from django.urls import reverse
 
 # Create your views here.
 class IndexView(View):
-    def get(self, request, tags='', article_id = 0):
+    def get(self, request, tags, article_id):
         return render(request, 'article/index.html', context={'article_id': article_id, 'tags': tags})
 
