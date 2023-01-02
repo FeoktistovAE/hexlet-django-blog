@@ -7,5 +7,6 @@ class RedirectView(View):
     def get(self, request):
         return redirect(reverse('articles'))
 
+
 def about(request):
     return render(request, 'about.html')
