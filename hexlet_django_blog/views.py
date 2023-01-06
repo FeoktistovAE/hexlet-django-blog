@@ -3,9 +3,10 @@ from django.views import View
 from django.urls import reverse
 
 
-class RedirectView(View):
+class IndexView(View):
     def get(self, request):
-        return redirect(reverse('articles'))
+        user = request.user
+        return render(request, 'index.html', {'who': user})
 
 
 def about(request):
