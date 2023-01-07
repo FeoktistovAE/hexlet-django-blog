@@ -1,2 +1,3 @@
 <div>{{ article.name }}</div>
 <div>{{ article.body}}</div>
+<a href="{% url 'articles_edit' id=article.id %}">Редактировать статью</a>
